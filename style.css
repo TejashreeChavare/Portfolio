@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Variable Define */
+:root {
+    --primary-color: #61106a;
+    --secondary-color: #380338;
+    --third-color: #d944f3;
+    --white-color: #fff;
+    --text-color: #faf5f5;
+    --text-gray: #999;
+    --black-color: #000;
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Quicksand', sans-serif;
+}
+
+/* Global Styles */
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-family: var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
+    scroll-behavior: smooth;
+    background-color: #f8f9fa;
+}
+.navbar {
+    background-color: var(--secondary-color); /* Secondary color for navbar */
+}
+
+/* Header Styles */
+.navbar-brand {
+    font-size: 1.98rem;
+    font-weight: 800;
+    color: #fff !important;
+    
+}
+
+.nav-link {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--white-color) !important;
+    letter-spacing: 1px;
+    background-color: var(--secondary-color);
+}
+
+.nav-link:hover {
+    color: var(--third-color) !important;
+}
+
+/* Home Section */
+#home {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+#home .card {
+    border: none;
+}
+#home .btn{
+    color: #f8f9fa;
+}
+
+#home .btn{
+    border: 1rem;
+    background-color: #380338;
+}
+
+/* About Section */
+#about img {
+    border: 5px solid var(--primary-color);
+    margin-bottom: 3rem;
+    
+}
+
+/* Skills Section */
+#skills h5 {
+    color: var(--primary-color);
+}
+
+#skills .progress-bar.bg-purple {
+    background-color: #4d0f61;
+}
+
+#skills .progress-bar.bg-danger {
+    background-color: #b8176d;
+}
+
+#skills .progress-bar.bg-warning {
+    background-color: #ecec1a;
+}
+
+#skills .progress-bar.bg-success {
+    background-color: #16e420;
+}
+
+#skills .progress-bar.bg-info {
+    background-color: #316881a6;
+}
+
+/* Projects Section */
+#project-section{
+    background-color: #8a5694;
+}
+#projects .card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Contact Section */
+#contact .card {
+    border: none;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--white-color); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color); 
+}
